@@ -125,7 +125,7 @@ class DjangoSession(models.Model):
 class Empleados(models.Model):
     nombre = models.CharField(max_length=50)
     apellido = models.CharField(max_length=50)
-    foto = models.CharField(max_length=50)
+    foto =  models.CharField(max_length=200)
     cargo = models.CharField(max_length=50)
     salario = models.IntegerField()
     contacto = models.CharField(max_length=50)

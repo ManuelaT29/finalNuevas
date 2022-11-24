@@ -38,7 +38,15 @@
                         <h1 classs="fw-bold my-3 animate__animated animate__fadeInDown">REGISTRO DE PLATOS</h1>
                         {{formularioPlato}}
                         {% csrf_token %}
-                        <button type="submit" class="btn btn-outoline-success">Registrar</button>
+
+                        <div class="col-12 text-center my-4">
+                        <button type="submit" class="btn btn-outline-dark">Registrar</button>
+                        </div>
+
+                        <div class="col-12 text-center my-4">
+                            <a href="{%  url 'menu'  %}" class="btn btn-outline-dark">Ver menú</a>
+                        </div>
+
                     </form>
                 </div>
             </div>
